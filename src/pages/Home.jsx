@@ -7,6 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import SearchIcon from '@mui/icons-material/Search'
 import figureimg from '../assets/figureimg.png'
+import { Card } from '../components/Card'
 
 export const Home = () => {
     return (
@@ -43,8 +44,16 @@ export const Home = () => {
                         </h1>
                     </figcaption>
                 </figure>
-                <div>div</div>
             </header>
+            <main id={ styles["main"]}>
+                <div id={ styles["carousel-container"]}>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </main>
         </>
     )
 }
