@@ -14,17 +14,15 @@ export const Home = () => {
             <header id={styles['hero']}>
                 <navbar id={styles['navbar']}>
                     <MenuIcon id={styles['menu-icon']} />
-                    <ul className={styles.navbar}>
-                        <li>
-                            <img src={logo} id={styles['navbar-logo']} />
-                        </li>
-                        <li id={styles['search']}>
-                            <SearchIcon />
-                            <input
-                                placeholder="search"
-                                id={styles['search-input']}
-                            ></input>
-                        </li>
+                    <ul>
+                        <img src={logo} id={styles['navbar-logo']} />
+                    </ul>
+                    <ul id={styles['search']}>
+                        <SearchIcon />
+                        <input
+                            placeholder="search"
+                            id={styles['search-input']}
+                        ></input>
                     </ul>
                     <ul>
                         <FacebookIcon />
@@ -34,9 +32,11 @@ export const Home = () => {
                     </ul>
                 </navbar>
                 <figure id={styles['hero-figure']}>
-                    <img id={styles['figure-img']} src={figureimg}></img>
+                    <div className={ styles.imageContainer}>
+                        <img id={styles['figure-img']} src={figureimg}></img>
+                    </div>
                     <figcaption>
-                        <h1 className={ styles.caption}>МЭДҮҮШТЭЙ</h1>
+                        <h1 className={ styles.caption} id={ styles["fancy"]}>МЭДҮҮШТЭЙ</h1>
                         <h1 className={ styles.caption}>
                             "THE APPRENTICE" ЦУВРАЛ #10: ШИЛДЭГ ТАВАН
                             ОРОЛЦОГЧИЙН ӨРСӨЛДӨӨН
