@@ -1,10 +1,13 @@
-import { Home } from './pages'
-
+import { Home, Newsdetail } from './pages'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
     return (
-        <>
-            <Home />
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path="/newsdetail" element={<Newsdetail />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
