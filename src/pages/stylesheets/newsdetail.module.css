@@ -45,7 +45,6 @@ input#search-input {
 /* container */
 .container{
    padding-top: 109px;
-   margin:0 328px 0 328px;
    height: 300vh;
 }
 .date{
@@ -72,11 +71,12 @@ input#search-input {
     margin-bottom: 6.6rem;
     max-width: 1000px;
 }
-.socialbar{
+.authorsection{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    margin-bottom: 60px;
 }
+ /* section author */
 .pic1{
     width: 100%;
     margin-bottom: 20px;
@@ -84,6 +84,8 @@ input#search-input {
 .author{
     display: flex;
     margin-right: 100px;
+    width: 20%;
+    /* flex-direction: column; */
 }
 .authorbox{
     width: 40px;
@@ -96,14 +98,55 @@ input#search-input {
     display: flex;
     flex-direction: column;
 }
+ /* section author end*/
 
+ /* section handalt  */
 .handalt {
     display: flex;
     flex-direction: column;
+    width:50%;
 }
-
 .icon {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
+ /* section handalt end */
+
+/* section share  */
+.sharecontent{
+    position: absolute;
+    right: 21%;
+}
+.imgborder{
+    width: 35px;
+    height: 35px;
+    margin:0 20px 0px 20px;
+}
+.shareic{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 12%;
+    top: 10%;
+}
+.shareict{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 46%;
+    top: 10%;
+}
+.shareicl{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10.5%;
+    top: 10%;
+}
+/* section share end */
+
+/* post section */
+.hr{
+    width: 6%;
+}
+/* post section end*/
+
 /* container-end */

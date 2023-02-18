@@ -33,20 +33,22 @@ export const Home = () => {
                     </ul>
                 </navbar>
                 <figure id={styles['hero-figure']}>
-                    <div className={ styles.imageContainer}>
+                    <div className={styles.imageContainer}>
                         <img id={styles['figure-img']} src={figureimg}></img>
                     </div>
                     <figcaption>
-                        <h1 className={ styles.caption} id={ styles["fancy"]}>МЭДҮҮШТЭЙ</h1>
-                        <h1 className={ styles.caption}>
+                        <h1 className={styles.caption} id={styles['fancy']}>
+                            МЭДҮҮШТЭЙ
+                        </h1>
+                        <h1 className={styles.caption}>
                             "THE APPRENTICE" ЦУВРАЛ #10: ШИЛДЭГ ТАВАН
                             ОРОЛЦОГЧИЙН ӨРСӨЛДӨӨН
                         </h1>
                     </figcaption>
                 </figure>
             </header>
-            <main id={ styles["main"]}>
-                <div id={ styles["carousel-container"]}>
+            <main id={styles['main']}>
+                <div id={styles['carousel-container']}>
                     <Card />
                     <Card />
                     <Card />

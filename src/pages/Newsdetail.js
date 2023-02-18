@@ -9,6 +9,8 @@ import SearchIcon from '@mui/icons-material/Search'
 import newspic from '../assets/newspic.png'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble'
+import shareborder from '../assets/shareborder.png'
+import { Container } from 'react-bootstrap'
 export const Newsdetail = () => {
     return (
         <div>
@@ -31,38 +33,55 @@ export const Newsdetail = () => {
                     <TwitterIcon />
                 </ul>
             </navbar>
-            <div className={styles.container}>
-                <div className={styles.date}>
-                    <a
-                        href="https://unread.today/category/explained"
-                        className={styles.tailbarlink}
-                    >
-                        ТАЙЛБАРЛАХ НЬ
-                    </a>
-                    2 САРЫН 4, 2023 <span className={styles.dot} />
-                    10 МИН
-                </div>
-                <h1 className={styles.title}>
-                    1930-2023: “Home entertainment”-ийн хөгжлийг тайлбарлах нь
-                </h1>
-                <img src={newspic} className={styles.pic1}></img>
-                <div className={styles.socialbar}>
-                    <div className={styles.author}>
-                        <div className={styles.authorbox}></div>
-                        <div className={styles.authorpost}>
-                            <span>Нийтэлсэн:</span>
-                            <a className={styles.authorname}>jinkenmongolhun</a>
-                        </div>
+            <Container>
+                <div className={styles.container}>
+                    <div className={styles.date}>
+                        <a
+                            href="https://unread.today/category/explained"
+                            className={styles.tailbarlink}
+                        >
+                            ТАЙЛБАРЛАХ НЬ
+                        </a>
+                        2 САРЫН 4, 2023 <span className={styles.dot} />
+                        10 МИН
                     </div>
-                    <div className={styles.handalt}>
-                        <p>Хандалт / Сэтгэгдэл:</p>
-                        <div className={styles.icons}>
-                            <RemoveRedEyeIcon /> 2333
-                            <ChatBubbleIcon /> 0
-                        </div>
+                    <h1 className={styles.title}>
+                        1930-2023: “Home entertainment”-ийн хөгжлийг тайлбарлах
+                        нь
+                    </h1>
+                    <img src={newspic} className={styles.pic1}></img>
+                    <div className={styles.authorsection}>
+                                <div className={styles.author}>
+                                    <div className={styles.authorbox}></div>
+                                        <div className={styles.authorpost}>
+                                            <span>Нийтэлсэн:</span>
+                                            <a className={styles.authorname}>
+                                                jinkenmongolhun
+                                            </a>
+                                        </div>
+                                </div>
+                                <div className={styles.handalt}>
+                                        <span>Хандалт / Сэтгэгдэл:</span>
+                                        <div className={styles.icon}>
+                                            <RemoveRedEyeIcon /> 2333
+                                            <ChatBubbleIcon /> 0
+                                        </div>
+                            </div>
+                         <div className={styles.sharecontent}>
+                                            <img className={styles.imgborder} src={shareborder}/>
+                                            <img className={styles.imgborder} src={shareborder}/>
+                                            <img className={styles.imgborder} src={shareborder}
+                                            />
+                                            <FacebookIcon className={styles.shareic} />
+                                            <TwitterIcon className={styles.shareict} />
+                                            <LinkedInIcon className={styles.shareicl} />
+                                </div>
+                    </div>
+                    <div className={styles.postsection}>
+                        <hr className={styles.hr}/>
                     </div>
                 </div>
-            </div>
+            </Container>
         </div>
     )
 }
