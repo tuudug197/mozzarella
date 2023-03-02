@@ -1,0 +1,19 @@
+.container {
+    width: 18vw;
+    max-width: 277px;
+    min-width: 120px;
+    aspect-ratio: 2/3;
+    background-image: url("https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg");
+    background-size: cover;
+    border-radius: 9px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: flex-end;
+}
+.title {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
