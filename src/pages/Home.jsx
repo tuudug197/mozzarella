@@ -8,12 +8,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import SearchIcon from '@mui/icons-material/Search'
 import figureimg from '../assets/figureimg.png'
 import { Card } from '../components/Card'
+import { Mini } from '../components/Mini'
+import { Author } from '../components/Author'
 
 export const Home = () => {
     return (
         <>
             <header id={styles['hero']}>
-                <navbar id={styles['navbar']}>
+                <navbar id={styles['navbar']}> 
                     <MenuIcon id={styles['menu-icon']} />
                     <ul>
                         <img src={logo} id={styles['navbar-logo']} />
@@ -42,6 +44,7 @@ export const Home = () => {
                             "THE APPRENTICE" ЦУВРАЛ #10: ШИЛДЭГ ТАВАН
                             ОРОЛЦОГЧИЙН ӨРСӨЛДӨӨН
                         </h1>
+                        <Author />
                     </figcaption>
                 </figure>
             </header>
@@ -52,6 +55,9 @@ export const Home = () => {
                     <Card />
                     <Card />
                     <Card />
+                </div>
+                <div id={ styles["newsfeed"]}>
+                    <Mini />
                 </div>
             </main>
         </>
