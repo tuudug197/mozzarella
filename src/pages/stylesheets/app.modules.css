@@ -1,0 +1,79 @@
+.body{
+  height: 1200px;
+  width: 2050px;
+  margin: 0px;
+  background-color: #9ACEEB;
+}
+*{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Header{
+  height: 100px;
+  width: 100%;
+  background-color:cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search{
+  height: 40px;
+  width: 500px;
+  border: gray;
+  border-radius: 10px;
+  outline: none;
+}
+.user{
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 150px;
+  margin-right: 20px;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.layout {
+  height: 100%;
+  display: flex;
+}
+.all{
+  width: 180px;
+  height: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.all-items{
+  width: 160px;
+  height: 40px;
+  background-color: rgb(140, 187, 236);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.posts-data{
+  width: 1850px;
+  height: 77%;
+  margin: 30px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+.data{
+  height: 150px;
+  width: 350px;
+  background-color: rgb(140, 187, 236);
+  margin: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
