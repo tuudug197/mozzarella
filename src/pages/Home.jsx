@@ -10,6 +10,7 @@ import figureimg from '../assets/figureimg.png'
 import { Card } from '../components/Card'
 import { Mini } from '../components/Mini'
 import { Author } from '../components/Author'
+import { Carousel } from '../components/Carousel'
 
 export const Home = () => {
     return (
@@ -52,11 +53,9 @@ export const Home = () => {
             </header>
             <main id={styles['main']}>
                 <div id={styles['carousel-container']}>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                 <div>
+                    <Carousel />
+                 </div>
                 </div>
                 <div id={ styles["newsfeed"]}>
                     <Mini />
